@@ -1,8 +1,8 @@
-package wc
+package services
 
 import "github.com/dghubble/sling"
 
-func newMatchService(sling *sling.Sling) *MatchService {
+func NewMatchService(sling *sling.Sling) *MatchService {
 	return &MatchService{
 		sling: sling.Path("matches/"),
 	}
